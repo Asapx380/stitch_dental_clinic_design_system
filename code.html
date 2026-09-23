@@ -37,8 +37,7 @@
       "name": "Gabriela Ramos Odontologia",
       "telephone": "+55-19-99927-8245",
       "address": { "@type": "PostalAddress", "streetAddress": "Avenida Angelo Franzim, 515", "addressLocality": "São Pedro", "addressRegion": "SP", "postalCode": "13520-000", "addressCountry": "BR" },
-      "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "18:00" }],
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "37", "bestRating": "5" }
+      "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:00", "closes": "18:00" }]
     }
   </script>
 </head>
@@ -112,7 +111,7 @@
     </nav>
   </header>
   <main class="pt-20">
-    <!-- 1. HERO SECTION BOUTIQUE COM REPUTAÇÃO GOOGLE 4.9 -->
+    <!-- 1. HERO SECTION -->
     <section
       class="hero relative overflow-hidden bg-gradient-to-b from-surface via-surface-warm/40 to-surface py-12 md:py-16 lg:py-20"
       id="inicio">
@@ -120,25 +119,13 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           <!-- Text Column -->
           <div class="hero-copy lg:col-span-7 flex flex-col gap-6 text-left">
-            <!-- Destaque Reputação Google 4.9 & Cuidado Exclusivo -->
+            <!-- Identificação da Clínica -->
             <div class="flex flex-wrap items-center gap-2.5">
               <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-champagne shadow-sm">
                 <span class="w-1.5 h-1.5 rounded-full bg-gold-champagne"></span>
                 <span class="text-[11px] font-medium tracking-[0.2em] uppercase text-gold-dark">Gabriela Ramos
                   Odontologia</span>
               </div>
-              <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-pure border border-border-gold shadow-xs hover:border-gold-champagne transition-all"
-                href="#depoimentos">
-                <span class="text-[#E7711B] text-xs font-bold flex items-center gap-0.5">
-                  <svg class="w-3.5 h-3.5 inline fill-current text-amber-500" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
-                    </path>
-                  </svg>
-                  <span data-count="4.9" data-decimals="1">4,9</span>
-                </span>
-                <span class="text-[11px] text-text-secondary font-medium">no Google Reviews</span>
-                <span class="text-[10px] text-text-muted">(37 avaliações reais)</span>
-              </a>
             </div>
             <h1
               class="font-serif text-4xl sm:text-5xl lg:text-[58px] lg:leading-[1.12] text-text-primary tracking-tight">
@@ -164,25 +151,17 @@
           </div>
           <!-- Hero Image Column -->
           <div class="lg:col-span-5 flex justify-center relative">
-            <div
-              class="hero-photo relative w-full max-w-[420px] aspect-[4/5] rounded-3xl p-2.5 bg-surface-pure border border-border-gold shadow-2xl shadow-gold-champagne/15">
-              <div class="w-full h-full rounded-2xl overflow-hidden relative bg-surface-warm">
+            <div class="hero-photo-glow absolute -inset-6 -z-10" aria-hidden="true"></div>
+            <div class="hero-photo relative w-full max-w-[420px] aspect-[4/5]">
+              <div class="hero-photo-fade w-full h-full overflow-hidden relative">
                 <img alt="Dra. Gabriela Ramos"
-                  class="w-full h-full object-cover object-center filter contrast-[1.02] brightness-[1.02]"
+                  class="w-full h-full object-cover object-top filter contrast-[1.02] brightness-[1.02]"
                   src="assets/images/hero-doctor.jpg" width="384" height="512" fetchpriority="high" decoding="async" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                <!-- Card de Identificação Flutuante -->
-                <div
-                  class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-surface-pure/92 backdrop-blur-md border border-border-gold flex items-center justify-between shadow-lg">
-                  <div>
-                    <span class="font-serif text-base text-text-primary font-medium block">Dra. Gabriela Ramos</span>
-                    <span class="text-[11px] uppercase tracking-wider text-gold-dark font-medium">Gabriela Ramos
-                      Odontologia</span>
-                  </div>
-                  <div
-                    class="w-9 h-9 rounded-full bg-surface-warm border border-border-gold flex items-center justify-center text-gold-dark">
-                    <span class="material-symbols-outlined text-base">verified</span>
-                  </div>
+                <div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-surface via-surface/70 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent"></div>
+                <div class="absolute bottom-5 left-0 right-0 flex items-center justify-center gap-2.5">
+                  <span class="font-serif text-base text-text-primary font-medium">Dra. Gabriela Ramos</span>
+                  <span class="material-symbols-outlined text-base text-gold-dark">verified</span>
                 </div>
               </div>
             </div>
@@ -541,7 +520,7 @@
         </div>
       </div>
     </section>
-    <!-- SEÇÃO NOVA DE REPUTAÇÃO E DEPOIMENTOS REAIS (GOOGLE REVIEWS: 4,9 ESTRELAS - 37 AVALIAÇÕES) -->
+    <!-- SEÇÃO DE AVALIAÇÕES -->
     <section class="py-20 sm:py-24 bg-surface" id="depoimentos">
       <div class="max-w-[1240px] mx-auto px-5 sm:px-8 flex flex-col gap-12">
         <!-- Cabeçalho de Avaliações -->
@@ -549,25 +528,21 @@
           <div class="flex flex-col gap-3">
             <div
               class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-pure border border-border-gold w-fit">
-              <span class="text-amber-500 font-bold text-xs">★★★★★</span>
-              <span class="text-[11px] font-semibold text-text-primary tracking-wide"><span data-count="4.9" data-decimals="1">4,9</span> de 5,0 no Google</span>
+              <span class="text-[11px] font-medium tracking-[0.2em] uppercase text-gold-dark">Avaliações</span>
             </div>
             <h2 class="font-serif text-3xl sm:text-4xl text-text-primary">O que dizem os nossos pacientes</h2>
           </div>
-          <!-- Badge de Avaliação Google -->
-          <div class="flex items-center gap-4 p-4 rounded-2xl bg-surface-pure border border-border-gold shadow-sm">
+          <a class="flex items-center gap-4 p-4 rounded-2xl bg-surface-pure border border-border-gold shadow-sm hover:border-gold-champagne transition-all group"
+            href="https://maps.google.com/?q=Av.+Angelo+Franzim,+515+-+Bela+Vista,+S%C3%A3o+Pedro+-+SP,+13520-000" rel="noopener" target="_blank">
             <div
-              class="w-12 h-12 rounded-full bg-[#EA4335]/10 border border-[#EA4335]/20 flex items-center justify-center font-bold text-[#EA4335] text-xl">
+              class="w-12 h-12 rounded-full bg-[#EA4335]/10 border border-[#EA4335]/20 flex items-center justify-center font-bold text-[#EA4335] text-xl group-hover:scale-105 transition-transform">
               G
             </div>
             <div>
-              <div class="flex items-center gap-1 text-amber-500 text-sm">
-                ★★★★★
-              </div>
-              <span class="font-serif text-sm font-semibold text-text-primary block"><span data-count="37">37</span> avaliações no Google Maps</span>
-              <span class="text-xs text-text-muted">Classificação média <span data-count="4.9" data-decimals="1">4,9</span> • São Pedro/SP</span>
+              <span class="font-serif text-sm font-semibold text-text-primary block">Avaliar no Google Maps</span>
+              <span class="text-xs text-text-muted">Sua opinião ajuda outros pacientes a nos conhecer</span>
             </div>
-          </div>
+          </a>
         </div>
         <!-- Grade de Depoimentos Reais dos Pacientes -->
         <div class="testimonial-controls" aria-label="Controles dos depoimentos">
@@ -872,10 +847,6 @@
                   <span class="material-symbols-outlined text-gold-champagne text-base">schedule</span>
                   <span>Quarta a Sábado: a partir das 09h00 (horário agendado)</span>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-gold-champagne text-base">star</span>
-                  <span>Reputação 4,9 estrelas com 37 avaliações no Google Maps</span>
-                </div>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-3 pt-2">
@@ -935,14 +906,14 @@
                 </div>
               </a>
               <a class="flex items-center gap-4 p-4 rounded-2xl bg-surface hover:bg-surface-warm border border-border-subtle transition-colors group"
-                href="https://instagram.com/gabrielaramosodonto" rel="noopener" target="_blank">
+                href="https://www.instagram.com/gabrielaramost" rel="noopener" target="_blank">
                 <div
                   class="w-11 h-11 rounded-full bg-surface-warm border border-border-gold flex items-center justify-center text-gold-dark group-hover:scale-105 transition-transform">
                   <span class="material-symbols-outlined text-xl">photo_camera</span>
                 </div>
                 <div class="flex flex-col">
                   <span class="text-[10px] tracking-wider uppercase text-text-muted">Instagram Oficial</span>
-                  <span class="text-sm font-medium text-text-primary">@gabrielaramosodonto</span>
+                  <span class="text-sm font-medium text-text-primary">@gabrielaramost</span>
                 </div>
               </a>
             </div>
@@ -1047,16 +1018,10 @@
   <!-- BOTÃO FLUTUANTE WHATSAPP DISCRETO E REFINADO -->
   <aside class="fixed bottom-6 right-6 z-50">
     <a aria-label="Falar no WhatsApp"
-      class="whatsapp-float flex items-center gap-3 px-5 py-3 rounded-full bg-surface-pure border border-border-gold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+      class="whatsapp-float flex items-center justify-center w-14 h-14 rounded-full bg-whatsapp-green text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
       href="https://wa.me/5519999278245?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20com%20a%20Dra.%20Gabriela%20Ramos."
       rel="noopener" target="_blank">
-      <div class="w-7 h-7 rounded-full bg-whatsapp-green flex items-center justify-center text-white text-sm shadow-sm">
-        <span class="material-symbols-outlined text-base">chat</span>
-      </div>
-      <div class="flex flex-col text-left">
-        <span class="text-[10px] uppercase tracking-wider text-text-muted font-medium">São Pedro / SP</span>
-        <span class="text-xs font-serif font-medium text-text-primary">(19) 99927-8245</span>
-      </div>
+      <svg class="w-7 h-7 fill-current" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.362.657 4.57 1.797 6.454L3 29l7.222-2.253A12.44 12.44 0 0 0 16 28.5c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3Zm7.294 17.646c-.31.872-1.532 1.6-2.516 1.81-.669.14-1.542.253-4.48-.964-3.762-1.557-6.187-5.386-6.376-5.634-.181-.248-1.522-2.026-1.522-3.866 0-1.84.964-2.744 1.307-3.12.31-.34.68-.42.906-.42.226 0 .453.002.65.012.209.01.489-.079.765.584.31.75.99 2.59 1.078 2.777.09.187.15.404.03.652-.117.248-.176.404-.348.622-.176.219-.37.489-.529.657-.176.187-.36.39-.155.766.207.375.916 1.512 1.966 2.448 1.353 1.208 2.494 1.582 2.87 1.76.376.176.596.15.816-.09.226-.235.964-1.124 1.223-1.51.257-.386.518-.322.87-.192.348.13 2.213 1.043 2.593 1.234.38.19.63.286.723.446.09.163.09.937-.222 1.808Z"></path></svg>
     </a>
   </aside>
   <!-- FOOTER REFINADO TEMA CLARO -->
@@ -1075,10 +1040,6 @@
           <p class="text-xs text-text-secondary font-light leading-relaxed">
             Odontologia de precisão estética, restaurações delicadas e atendimento humanizado em São Pedro - SP.
           </p>
-          <div class="flex items-center gap-2">
-            <span class="text-amber-500 text-xs">★★★★★</span>
-            <span class="text-[11px] font-medium text-text-primary">4,9 estrelas (37 reviews no Google)</span>
-          </div>
         </div>
         <!-- Coluna 2: Navegação -->
         <div class="flex flex-col gap-3">
@@ -1118,7 +1079,7 @@
             <a class="text-text-secondary hover:text-gold-dark transition-colors"
               href="https://wa.me/5519999278245">(19) 99927-8245 (WhatsApp)</a>
             <a class="text-text-secondary hover:text-gold-dark transition-colors"
-              href="https://instagram.com/gabrielaramosodonto" rel="noopener" target="_blank">@gabrielaramosodonto</a>
+              href="https://www.instagram.com/gabrielaramost" rel="noopener" target="_blank">@gabrielaramost</a>
           </div>
         </div>
       </div>
