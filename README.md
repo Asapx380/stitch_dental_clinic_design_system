@@ -1,6 +1,6 @@
 # Gabriela Ramos Odontologia
 
-Landing page estática da clínica. Abra `code.html` no navegador para visualizar o projeto.
+Landing page estática da clínica. No ar: [drgrabrielaramos.vercel.app](https://drgrabrielaramos.vercel.app). A raiz do deploy abre `code.html`. Localmente, abra esse arquivo no navegador.
 
 ## Estrutura
 
