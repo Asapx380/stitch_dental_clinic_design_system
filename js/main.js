@@ -324,16 +324,21 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCarouselDots();
   if (testimonialsTrack && !prefersReducedMotion) {
     let carouselTimer;
+    let carouselHovered = false;
     const pauseCarousel = () => window.clearInterval(carouselTimer);
     const startCarousel = () => {
       pauseCarousel();
+      if (document.hidden || carouselHovered || testimonialsTrack.contains(document.activeElement)) return;
       carouselTimer = window.setInterval(() => {
         const atEnd = testimonialsTrack.scrollLeft + testimonialsTrack.clientWidth >= testimonialsTrack.scrollWidth - 8;
         testimonialsTrack.scrollTo({ left: atEnd ? 0 : testimonialsTrack.scrollLeft + testimonialsTrack.clientWidth, behavior: 'smooth' });
       }, 6000);
     };
-    ['pointerenter', 'focusin'].forEach((event) => testimonialsTrack.addEventListener(event, pauseCarousel));
-    ['pointerleave', 'focusout'].forEach((event) => testimonialsTrack.addEventListener(event, startCarousel));
+    testimonialsTrack.addEventListener('pointerenter', () => { carouselHovered = true; pauseCarousel(); });
+    testimonialsTrack.addEventListener('pointerleave', () => { carouselHovered = false; startCarousel(); });
+    testimonialsTrack.addEventListener('focusin', pauseCarousel);
+    testimonialsTrack.addEventListener('focusout', () => window.setTimeout(startCarousel, 0));
+    document.addEventListener('visibilitychange', startCarousel);
     startCarousel();
   }
 
