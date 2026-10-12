@@ -25,3 +25,21 @@ npx tailwindcss@3.4.17 -i css/tailwind.css -o css/tailwind.generated.css -c tail
 O formulário de pré-agendamento prepara uma mensagem no WhatsApp. A solicitação só é enviada quando o visitante confirma o envio no próprio WhatsApp. Menu, comparador antes/depois, carrossel de avaliações e vídeo são controlados por `js/main.js`.
 
 O vídeo vertical fica em `assets/videos/video01.mp4`. Ele inicia sem som quando entra na área visível, pausa ao sair e oferece um controle para ativar o áudio. A imagem de capa está em `assets/images/video01-poster.jpg`.
+
+## Desenvolvimento e validação
+
+Este projeto é estático. Para servir a pasta localmente, com Python instalado:
+
+```bash
+python -m http.server 8080
+```
+
+Abra `http://localhost:8080/code.html`. Para conferir a sintaxe, com Node.js instalado:
+
+```bash
+node --check js/main.js
+```
+
+Confira menu no celular, teclado, comparador, pausa do carrossel em foco/hover e aba oculta, vídeo e preferência de movimento reduzido. Revise a mensagem do formulário no WhatsApp sem enviá-la durante o teste.
+
+A verificação de sintaxe não substitui os testes da interface e das integrações.
